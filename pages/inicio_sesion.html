@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Mundo canino</title>
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
@@ -67,7 +68,7 @@
         <div class="content-grid">
             <h2 class="tituloAzul">Inicio de sesion</h2>
             <p>Completa los campos con tu usuario y contraseña para iniciar sesión</p>
-            <form>
+            <form data-aos="zoom-in" data-aos-duration ="1000">
                 <fieldset>
                     <div>
                         <label for="name">
@@ -103,6 +104,10 @@
             </footer>
         </div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 
 </html>

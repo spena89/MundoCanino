@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Mundo canino</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -70,7 +71,7 @@
                 laboriosam error architecto sunt temporibus modi libero. Consequatur possimus
                 illum ullam suscipit nobis dolore maxime enim officia corrupti corporis.</p>
         </div>
-        <div class="item1-grid popularbreeds">
+        <div class="item1-grid popularbreeds" data-aos="fade-right" data-aos-duration ="800">
             <img src="images/Border_collie.jpg" alt="Border Collie">
             <h3 class="card-titles">Border Collie</h3>
             <p>
@@ -87,7 +88,7 @@
                 illum ullam suscipit nobis dolore maxime enim officia corrupti corporis.</p>
             <a href="https://es.wikipedia.org/wiki/Labrador_retriever" class="btn btn-primary">Ver más</a>
         </div>
-        <div class="item3-grid popularbreeds">
+        <div class="item3-grid popularbreeds" data-aos="fade-left" data-aos-duration ="800">
             <img src="images/ovejero_suizo.jpg" alt="Ovejero Suizo">
             <h3 class="card-titles">Pastor Suizo</h3>
             <p>
@@ -113,7 +114,10 @@
             </footer>
         </div>
     </div>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 
 </html>

@@ -6,8 +6,7 @@
 
 .wrapper-grid {
     border-radius: 10px;
-    background-color: red;
-    /* background: rgba(255, 255, 255, .9); */
+    background-image:linear-gradient(to bottom,rgba(255, 255, 255, .9),rgba(189, 189, 189, 0.9) ) ;
     padding: 2em;
     display: grid;
     grid-column-gap: 10px;

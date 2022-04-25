@@ -1,0 +1,441 @@
+* {
+    box-sizing: border-box;
+}
+
+/* grid */
+
+.wrapper-grid {
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .9);
+    padding: 2em;
+    display: grid;
+    grid-column-gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-areas:
+        "nav nav nav"
+        "content content content"
+        "card1 card2 card3"
+        "footer footer footer"
+}
+
+
+.nav-grid {
+    grid-area: nav;
+}
+
+.content-grid {
+    grid-area: content;
+}
+
+.item1-grid {
+    grid-area: card1;
+
+}
+
+.item2-grid {
+    grid-area: card2;
+
+}
+
+.item3-grid {
+    grid-area: card3;
+
+}
+
+.footer-grid {
+    grid-area: footer;
+}
+
+
+/* grid */
+
+.fondoPerrosMedianos {
+    background: cover no-repeat white url(../images/FondoPerrosMedianos.jpg);
+}
+
+h1 {
+    color: rgb(45, 4, 4);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.tituloAzul {
+    color: rgb(25, 25, 102);
+    padding-bottom: 1rem;
+    margin-top: 5rem;
+}
+
+body {
+    background-color: rgb(118, 117, 132);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* CSS de barra de navegacion */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.nav-top {
+    background: #dfdfdf;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.nav-top h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.nav-top h1 img {
+    width: auto;
+    height: 1.5rem;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.razas-x-tamanio article {
+    margin-bottom: 100px;
+}
+
+.parallax h3 {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 5px;
+    line-height: 3em;
+    transform: translateY(130px);
+    display: block;
+    text-align: center;
+}
+
+.parallax a h3 {
+    text-align: center;
+}
+
+.parallax .btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.nav-login a,
+.nav-top a {
+    padding: 0.3em;
+    display: inline-block;
+    font-weight: 400;
+}
+
+.nav-desplegable {
+    position: relative;
+}
+
+.nav-desplegable:hover .nav-submenu {
+    display: block;
+}
+
+.nav-submenu {
+    position: absolute;
+    left: 0;
+    background-color: white;
+    border-radius: 3px;
+    display: none;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .2);
+}
+
+.nav-submenu li {
+    margin: 1em;
+    display: block;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+
+/* FIN CSS de barra de navegacion */
+
+.parallax {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    border-radius: 4px;
+    background-position-y: 0;
+
+}
+
+.imgGrandes {
+    background-image: url("../images/fondoRazasGrandes.jfif");
+}
+
+.imgMedianos {
+    background-image: url("../images/mediumBreed4.jpg");
+}
+
+.imgPequenos {
+    background-image: url("../images/smallBreed3.jpg");
+}
+
+
+/* .palabra = class          # = ID */
+
+.popularbreeds {
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 20%);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.popularbreeds img {
+    border-radius: 8px 8px 0 0;
+}
+
+.btn {
+    text-decoration: none;
+    border-radius: 5px;
+    border: 0;
+    color: white;
+    background-color: grey;
+    padding: 8px 16px;
+    margin: 10px auto;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-primary {
+    background-color: cadetblue;
+}
+
+.btn-secondary {
+    background-color: rgb(117, 153, 182);
+}
+
+.btn-warning {
+    background-color: rgb(182, 69, 69);
+}
+
+fieldset {
+    padding: 0.8em;
+    display: inline;
+    border: 1px solid #d6d6d6;
+    padding: 2em;
+    background: white;
+}
+
+fieldset div {
+    margin-bottom: 1em;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="tel"] {
+    margin: 15px 0;
+    padding: 10px 8px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #bbb;
+    border-radius: 15px;
+    display: inline-block;
+    box-sizing: border-box;
+    transition: 0.2s ease all;
+}
+
+form input[type=text]:focus,
+form input[type="password"]:focus {
+    border-color: cornflowerblue;
+}
+
+.footer-grid footer {
+    border-radius: 10px;
+    margin: 2em auto 0 auto;
+    max-width: 1200px;
+    margin-top: 2em;
+    background: #dfdfdf;
+    width: 100%;
+}
+
+fieldset input[type="text"],
+fieldset input[type="password"],
+fieldset input[type="email"] {
+    display: block;
+    margin-bottom: 0.2em;
+}
+
+/*CSS del footer */
+.nav-footer {
+    padding: 30px;
+    text-align: center;
+}
+
+.nav-footer li {
+    padding: 3em;
+}
+
+input[type=tel] {
+    display: block;
+}
+
+/* tables */
+
+.raciones table {
+    border: 1px solid #cacaca;
+    margin: 2em 0;
+    padding: 2em;
+    border-radius: 5px;
+    background: white;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0.5em;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table,
+th,
+td {
+    border: none
+}
+
+.cantidad-carrito {
+    width: 4em;
+}
+
+.no-border {
+    width: 4em;
+    border: none
+}
+
+table .imagen-carrito:hover {
+    cursor: pointer;
+}
+
+td {
+    text-align: center;
+}
+
+.tabla-encabezado {
+    border-radius: 3px;
+    width: 8em;
+    padding: 0.5em 1em;
+    line-height: 1.2;
+    background-color: rgb(236 236 236 / 85%);
+    white-space: nowrap;
+    border-bottom: 4px solid rgb(60 60 188 / 85%);
+}
+
+/* tables */
+
+.paragraph-contact {
+    margin: 70px 0 30px 0;
+}
+
+/* responsive-cell */
+
+@media only screen and (max-width: 600px) {
+    .wrapper-grid {
+        grid-template-areas:
+            "nav"
+            "content"
+            "card1"
+            "card2"
+            "card3"
+            "footer"
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    .nav-top {
+        flex-direction: column;
+        position: absolute;
+    }
+
+    .nav-top h1 {
+        display: none;
+    }
+
+    .raciones table {
+        border: 1px solid #cacaca;
+        margin: 2em 0;
+        padding: 0.3em;
+        border-radius: 5px;
+        background: white;
+    }
+
+    table {
+        border-collapse: separate;
+        border-spacing: 0.5em;
+    }
+
+    .center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    table,
+    th,
+    td {
+        border: none
+    }
+
+    .cantidad-carrito {
+        width: 1em;
+    }
+
+    .no-border {
+        width: 1em;
+        border: none
+    }
+
+    .tabla-encabezado {
+        border-radius: 3px;
+        width: 1em;
+        padding: 0.5em 0.5em;
+        line-height: 0.5;
+        background-color: rgb(236 236 236 / 85%);
+        white-space: nowrap;
+        border-bottom: 4px solid rgb(60 60 188 / 85%);
+    }
+
+}

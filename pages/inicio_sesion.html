@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mundo canino</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <div class="wrapper-grid">
+        <!-- nav-->
+        <nav class="nav-grid nav-top">
+            <ul>
+                <li>
+                    <a href="../index.html" class="noDeco">
+                        Inicio
+                    </a>
+                </li>
+                <li class="nav-desplegable">
+                    <a href="Razas.html">
+                        Razas
+                    </a>
+                    <ul class="nav-submenu">
+                        <!-- empieza SUB-NAV-->
+                        <li>
+                            <a href="razas_grandes.html">
+                                Grandes
+                            </a>
+                        </li>
+                        <li>
+                            <a href="razas_medianas.html">
+                                Medianas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="razas_pequenas.html">
+                                Pequeñas
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- finaliza SUB-NAV-->
+                <li>
+                    <a href="raciones.html">
+                        Raciones
+                    </a>
+                </li>
+            </ul>
+            <h1><img src="../images/mundo-canino-logo.png" alt="Logo Mundo Canino"> Mundo Canino</h1>
+            <ul>
+                <li>
+                    <a href="inicio_sesion.html">
+                        Iniciar sesion
+                    </a>
+                </li>
+                <li>
+                    <a href="registro.html">
+                        Registrarse
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /nav-->
+        <div class="content-grid">
+            <h2 class="tituloAzul">Inicio de sesion</h2>
+            <p>Completa los campos con tu usuario y contraseña para iniciar sesión</p>
+            <form>
+                <fieldset>
+                    <div>
+                        <label for="name">
+                            Usuario</label>
+                        <input type="text" name="name" required="required">
+                    </div>
+                    <div>
+                        <label for="name">
+                            Contraseña</label>
+                        <input type="password" name="password" required="required">
+                    </div>
+                    <input class="btn btn-primary" type="submit" value="Ingresar">
+                    <input class="btn btn-primary" type="submit"
+                        onclick="alert('Se ha enviado un mail a su correo para recuperar su contraseña')"
+                        value="Olvidé mi contraseña">
+                </fieldset>
+            </form>
+        </div>
+        <div class="footer-grid">
+            <footer>
+                <nav class="nav-footer">
+                    <ul>
+                        <li>
+                            <a href="contacto.html">
+                                Contacto
+                            </a>
+                        </li>
+                        <li>
+                            <p>Todos los derechos reservados. 2022</p>
+                        </li>
+                    </ul>
+                </nav>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

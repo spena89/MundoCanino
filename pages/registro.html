@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mundo canino</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <div class="wrapper-grid">
+        <!-- nav-->
+        <nav class="nav-grid nav-top">
+            <ul>
+                <li>
+                    <a href="../index.html" class="noDeco">
+                        Inicio
+                    </a>
+                </li>
+                <li class="nav-desplegable">
+                    <a href="Razas.html">
+                        Razas
+                    </a>
+                    <ul class="nav-submenu">
+                        <!-- empieza SUB-NAV-->
+                        <li>
+                            <a href="razas_grandes.html">
+                                Grandes
+                            </a>
+                        </li>
+                        <li>
+                            <a href="razas_medianas.html">
+                                Medianas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="razas_pequenas.html">
+                                Pequeñas
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- finaliza SUB-NAV-->
+                <li>
+                    <a href="raciones.html">
+                        Raciones
+                    </a>
+                </li>
+            </ul>
+            <h1><img src="../images/mundo-canino-logo.png" alt="Logo Mundo Canino"> Mundo Canino</h1>
+            <ul>
+                <li>
+                    <a href="inicio_sesion.html">
+                        Iniciar sesion
+                    </a>
+                </li>
+                <li>
+                    <a href="registro.html">
+                        Registrarse
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /nav-->
+        <div class="content-grid">
+            <h2 class="tituloAzul">Crear un usuario</h2>
+            <p>Completa los campos para generar tu usuario personal en el sitio.</p>
+        </div>
+        <form>
+            <fieldset>
+                <div>
+                    <label for="name">
+                        Usuario
+                    </label>
+                    <input type="text" name="name" required="required">
+                </div>
+                <div>
+                    <label for="name">
+                        Contraseña
+                    </label>
+                    <input type="password" name="name" required="required">
+                </div>
+                <div>
+                    <label for="name">
+                        Repetir contraseña
+                    </label>
+                    <input type="password" name="name" required="required">
+                </div>
+                <div>
+                    <label for="name">
+                        Nombre completo
+                    </label>
+                    <input type="text" name="name" required="required">
+                </div>
+                <div>
+                    <label for="email">
+                        Email
+                    </label>
+                    <input type="email" name="mail" required="required">
+                </div>
+                <div>
+                    <label for="sexo">
+                        Sexo
+                    </label>
+                    <div>
+                        <input type="radio" name="sexo" value="hombre">
+                        Hombre
+                        <input type="radio" name="sexo" value="mujer">
+                        Mujer
+                        <input type="radio" name="sexo" value="otro">
+                        Otro
+                    </div>
+                </div>
+                <label for="notificaciones">
+                    Deseas recibir notificaciones?
+                </label>
+                <input type="checkbox">
+                <div>
+                    <input class="btn btn-primary" type="submit" value="Enviar">
+                    <input class="btn btn-warning" type="reset" value="Borrar todo">
+                </div>
+            </fieldset>
+        </form>
+        <div class="footer-grid">
+            <footer>
+                <nav class="nav-footer">
+                    <ul>
+                        <li>
+                            <a href="contacto.html">
+                                Contacto
+                            </a>
+                        </li>
+                        <li>
+                            <p>Todos los derechos reservados. 2022</p>
+                        </li>
+                    </ul>
+                </nav>
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>

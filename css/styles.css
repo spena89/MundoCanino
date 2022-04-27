@@ -10,16 +10,18 @@
     padding: 2em;
     display: grid;
     grid-column-gap: 10px;
-    max-width: 1200px;
-    margin: 0 auto;
+    /* max-width: 1200px; */
+    /* margin: 0 auto;
     grid-auto-rows: minmax(50px, auto);
     grid-template-areas:
         "nav nav nav"
         "content content content"
         "card1 card2 card3"
-        "footer footer footer"
+        "footer footer footer" */
 }
-
+h1 img{
+display: flex;
+}
 
 .nav-grid {
     grid-area: nav;
@@ -81,7 +83,7 @@ body {
 
 /* CSS de barra de navegacion */
 
-img {
+/* img {
     max-width: 100%;
     height: auto;
 }
@@ -107,7 +109,7 @@ img {
     width: auto;
     height: 1.5rem;
 
-}
+} */
 
 a {
     color: black;
@@ -137,7 +139,7 @@ a {
     bottom: 20px;
     right: 20px;
 }
-
+/* 
 .nav-login a,
 .nav-top a {
     padding: 0.3em;
@@ -175,7 +177,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-}
+} */
 
 
 /* FIN CSS de barra de navegacion */
@@ -248,6 +250,9 @@ nav ul li {
     background-color: rgb(182, 69, 69);
 }
 
+main.row{
+    padding-bottom:1em ;
+}
 fieldset {
     padding: 0.8em;
     display: inline;
@@ -280,14 +285,15 @@ form input[type="password"]:focus {
     border-color: cornflowerblue;
 }
 
-.footer-grid footer {
+footer {
     border-radius: 10px;
-    margin: 2em auto 0 auto;
-    max-width: 1200px;
-    margin-top: 2em;
     background: #dfdfdf;
-    width: 100%;
 }
+
+footer .nav-footer li{
+    padding:1em;
+}
+
 
 fieldset input[type="text"],
 fieldset input[type="password"],
@@ -298,7 +304,7 @@ fieldset input[type="email"] {
 
 /*CSS del footer */
 .nav-footer {
-    padding: 30px;
+    padding: 0px;
     text-align: center;
 }
 
@@ -371,7 +377,7 @@ td {
 
 /* responsive-cell */
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
     .wrapper-grid {
         grid-template-areas:
             "nav"
@@ -436,6 +442,6 @@ td {
         background-color: rgb(236 236 236 / 85%);
         white-space: nowrap;
         border-bottom: 4px solid rgb(60 60 188 / 85%);
-    }
+    } */
 
-}
+/* } */

@@ -366,7 +366,7 @@ td {
 }
 
 .carousel-item img {
-    object-fit:cover;
+    object-fit: cover;
     object-position: center;
     height: 50vh;
     overflow: hidden;
@@ -385,7 +385,23 @@ td {
 .carousel {
     margin: auto;
 }
-
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+.video-container embed,
+.video-container iframe,
+.video-container object {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 /* responsive-cell */
 
 /* @media only screen and (max-width: 600px) {

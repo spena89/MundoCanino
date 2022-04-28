@@ -6,7 +6,7 @@
 
 .wrapper-grid {
     border-radius: 10px;
-    background:linear-gradient(to bottom,rgba(255, 255, 255, .9),rgba(189, 189, 189, 0.9) ) ;
+    background: linear-gradient(to bottom,rgba(255, 255, 255, .9),rgba(189, 189, 189, 0.9));
     padding: 2em;
     display: grid;
     grid-column-gap: 10px;
@@ -19,8 +19,8 @@
         "card1 card2 card3"
         "footer footer footer" */
 }
-h1 img{
-display: flex;
+h1 img {
+    display: flex;
 }
 
 .nav-grid {
@@ -50,11 +50,10 @@ display: flex;
     grid-area: footer;
 }
 
-
 /* grid */
 
 .fondoPerrosMedianos {
-    background: cover no-repeat white url(../images/FondoPerrosMedianos.jpg);
+    background: cover no-repeat white url("../images/FondoPerrosMedianos.jpg");
 }
 
 h1 {
@@ -66,7 +65,7 @@ h1 {
 .tituloAzul {
     color: rgb(25, 25, 102);
     padding-bottom: 1rem;
-    margin-top: 5rem;
+    font-weight: 700;
 }
 
 body {
@@ -179,7 +178,6 @@ nav ul li {
     display: inline;
 } */
 
-
 /* FIN CSS de barra de navegacion */
 
 .parallax {
@@ -207,13 +205,12 @@ nav ul li {
     background-image: url("../images/smallBreed3.jpg");
 }
 
-
 /* .palabra = class          # = ID */
 
 .popularbreeds {
     border-radius: 8px;
     background-color: white;
-    box-shadow: 0px 0px 20px rgb(0 0 0 / 20%);
+    box-shadow: 0 0 20px rgb(0 0 0 / 20%);
     padding: 1.5rem;
     text-align: center;
 }
@@ -250,8 +247,8 @@ nav ul li {
     background-color: rgb(182, 69, 69);
 }
 
-main.row{
-    padding-bottom:1em ;
+main.row {
+    padding-bottom: 1em;
 }
 fieldset {
     padding: 0.8em;
@@ -280,8 +277,8 @@ form input[type="tel"] {
     transition: 0.2s ease all;
 }
 
-form input[type=text]:focus,
-form input[type="password"]:focus {
+form input[type="password"]:focus,
+form input[type=text]:focus {
     border-color: cornflowerblue;
 }
 
@@ -290,10 +287,9 @@ footer {
     background: #dfdfdf;
 }
 
-footer .nav-footer li{
-    padding:1em;
+footer .nav-footer li {
+    padding: 1em;
 }
-
 
 fieldset input[type="text"],
 fieldset input[type="password"],
@@ -304,7 +300,7 @@ fieldset input[type="email"] {
 
 /*CSS del footer */
 .nav-footer {
-    padding: 0px;
+    padding: 0;
     text-align: center;
 }
 
@@ -337,9 +333,9 @@ table {
 }
 
 table,
-th,
-td {
-    border: none
+td,
+th {
+    border: none;
 }
 
 .cantidad-carrito {
@@ -348,7 +344,7 @@ td {
 
 .no-border {
     width: 4em;
-    border: none
+    border: none;
 }
 
 table .imagen-carrito:hover {
@@ -369,10 +365,25 @@ td {
     border-bottom: 4px solid rgb(60 60 188 / 85%);
 }
 
+.carousel-item img {
+    object-fit:cover;
+    object-position: center;
+    height: 50vh;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+.col-sm-3 iframe {
+    margin: 5em;
+}
 /* tables */
 
 .paragraph-contact {
-    margin: 70px 0 30px 0;
+    margin: 70px 0 30px;
+}
+
+.carousel {
+    margin: auto;
 }
 
 /* responsive-cell */
@@ -414,10 +425,7 @@ td {
         border-spacing: 0.5em;
     }
 
-    .center {
-        margin-left: auto;
-        margin-right: auto;
-    }
+
 
     table,
     th,

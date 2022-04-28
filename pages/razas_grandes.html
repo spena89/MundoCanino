@@ -11,100 +11,206 @@
     </head>
 
     <body>
-        <div class="wrapper-grid">
-            <div class="nav-grid">
-                <!--nav-->
-                <nav class="nav-grid nav-top">
-                    <ul>
-                        <li>
-                            <a href="../index.html" class="noDeco">
-                                Inicio
-                            </a>
-                        </li>
-                        <li class="nav-desplegable">
-                            <a href="Razas.html">
-                                Razas
-                            </a>
-                            <ul class="nav-submenu">
-                                <!-- empieza SUB-NAV-->
-                                <li>
-                                    <a href="razas_grandes.html">
-                                        Grandes
-                                    </a>
+        <div class="container">
+            <!--NAV-bootstrap-->
+            <div class="row">
+                <div class="col-sm-12">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand " href="../index.html"><img
+                            class="d-inline-block align-text-top"
+                            src="../images/mundo-canino-logo.png"
+                            alt=""
+                            width="20">
+                            Mundo Canino</a>
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="raciones.html">Raciones</a>
                                 </li>
-                                <li>
-                                    <a href="razas_medianas.html">
-                                        Medianas
+                                <li class="nav-item dropdown">
+                                    <a
+                                        class="nav-link dropdown-toggle"
+                                        href=""
+                                        id="navbarDropdown"
+                                        role="button"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Razas
                                     </a>
-                                </li>
-                                <li>
-                                    <a href="razas_pequenas.html">
-                                        Pequeñas
-                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li>
+                                            <a class="dropdown-item" href="razas_grandes.html">Grandes</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="razas_medianas.html">Medianas</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="razas_pequenas.html">Pequeñas</a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
-                        </li>
-                        <!-- finaliza SUB-NAV-->
-                        <li>
-                            <a href="raciones.html">
-                                Raciones
-                            </a>
-                        </li>
-                    </ul>
-                    <h1><img src="../images/mundo-canino-logo.png" alt="Logo Mundo Canino">
-                        Mundo Canino</h1>
-                    <ul>
-                        <li>
-                            <a href="inicio_sesion.html">
-                                Iniciar sesion
-                            </a>
-                        </li>
-                        <li>
-                            <a href="registro.html">
-                                Registrarse
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <!-- /nav-->
-            </div>
-            <div class="content-grid">
-                <h2>Razas grandes</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur in magni
-                    quibusdam soluta id quo. Unde corrupti debitis officiis molestias at asperiores
-                    numquam, nisi accusantium architecto minima, odio amet neque. Lorem ipsum dolor
-                    sit amet consectetur adipisicing elit. Blanditiis reprehenderit possimus, cumque
-                    repudiandae optio ipsa, pariatur rem debitis autem ut alias aliquam quaerat
-                    deleniti eum facilis deserunt, non explicabo vero!
-                </p>
-                <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/f3L54FSR7nU?start=9"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen="allowfullscreen"></iframe>
-            </div>
-            <div class="footer-grid">
-                <footer>
-                    <nav class="nav-footer">
-                        <ul>
-                            <li>
-                                <a href="contacto.html">
-                                    Contacto
-                                </a>
-                            </li>
-                            <li>
-                                <p>Todos los derechos reservados. 2022</p>
-                            </li>
-                        </ul>
+                            <ul class="d-flex navbar-nav mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="inicio_sesion.html">Iniciar sesión</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="registro.html">Registrarse</a>
+                                </li>
+                            </ul>
+                        </div>
                     </nav>
-                </footer>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <hr>
+                    <h2 class="tituloAzul">Razas grandes</h2>
+                    <p>
+                        Te gustan los perros grandes? quizas estas pensando en adoptar uno para agrandar la familia. Estos peludos gigantes a pesar de su enorme tamaño tienden a ser tranquilos y buenos. Para que un perro se considere grande, debe pesar entre 25 y 45 kg y medir entre 40 y 60cm de alto. Debajo podras ver videos con las caracteristicas principales de algunas de las razas más populares de estos ultimos tiempos
+                    </p>
+                    <hr>
+                <div class="col-sm-12">
+                    <div
+                        class="carousel slide col-sm-12"
+                        id="carouselExampleIndicators"
+                        data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img
+                                    class="d-block w-100"
+                                    src="../images/large2.jpg"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img
+                                    class="d-block w-100"
+                                    src="../images/large6.jpg"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img
+                                    class="d-block w-100"
+                                    src="../images/large7.jpg"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img
+                                    class="d-block w-100"
+                                    src="../images/large5.png"
+                                    alt="...">
+                            </div>
+                        </div>
+                        <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-12">
+                    <hr>
+                    <h3 class="tituloAzul">
+                        Encontrá todo lo que necesitas saber en nuestra sección de videos destacados
+                    </h>
+                </div>
+                <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2 col-xs-12">
+                    <div class="video-container">
+                        <iframe
+                            src="https://www.youtube.com/embed/ljNISJluEHA"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen="allowfullscreen"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2 col-xs-12">
+                    <div class="video-container">
+                        <iframe
+                            src="https://www.youtube.com/embed/VEnr5CpsVFE""
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen="allowfullscreen"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2 col-xs-12">
+                    <div class="video-container">
+                        <iframe
+                            src="https://www.youtube.com/embed/8va0ZbLM4iE"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen="allowfullscreen"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2 col-xs-12">
+                    <div class="video-container">
+                        <iframe
+                            src="https://www.youtube.com/embed/ndrkPbK1Dns"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen="allowfullscreen"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2 col-xs-12">
+                    <div class="video-container">
+                        <iframe
+                            src="https://www.youtube.com/embed/lRX70rGck5s"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen="allowfullscreen"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-0 col-sm-8 offset-sm-2 col-xs-12">
+                    <div class="video-container">
+                        <iframe
+                            src="https://www.youtube.com/embed/8L2K9K90ras"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen="allowfullscreen"></iframe>
+                    </div>
+                </div>
             </div>
         </div>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-    </body>
+        <style>
+            .video-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; margin-bottom: 2rem; }
+            .video-container iframe, .video-container object, .video-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+        </style>
+
+        <!-- <div class="footer-grid"> <footer> <nav class="nav-footer"> <ul> <li> <a
+        href="contacto.html"> Contacto </a> </li> <li> <p>Todos los derechos reservados.
+        2022</p> </li> </ul> </nav> </footer> </div> -->
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
 
 </html>

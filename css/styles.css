@@ -259,9 +259,7 @@ footer .nav-footer li {
         border: none
     }
 
-    .cantidad-carrito {
-        width: 1em;
-    }
+
 
     .no-border {
         width: 1em;
@@ -279,3 +277,6 @@ footer .nav-footer li {
     } */
 
 /* } */
+.cantidad-carrito {
+    width: 50px;
+}

@@ -4,143 +4,177 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Mundo canino</title>
         <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+            integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S"
+            crossorigin="anonymous">
         <link rel="stylesheet" href="../css/styles.css">
     </head>
 
     <body>
-        <div class="wrapper-grid">
-            <!-- nav-->
-            <nav class="nav-grid nav-top">
-                <ul>
-                    <li>
-                        <a href="../index.html" class="noDeco">
-                            Inicio
-                        </a>
-                    </li>
-                    <li class="nav-desplegable">
-                        <a href="Razas.html">
-                            Razas
-                        </a>
-                        <ul class="nav-submenu">
-                            <!-- empieza SUB-NAV-->
-                            <li>
-                                <a href="razas_grandes.html">
-                                    Grandes
-                                </a>
-                            </li>
-                            <li>
-                                <a href="razas_medianas.html">
-                                    Medianas
-                                </a>
-                            </li>
-                            <li>
-                                <a href="razas_pequenas.html">
-                                    Pequeñas
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- finaliza SUB-NAV-->
-                    <li>
-                        <a href="raciones.html">
-                            Raciones
-                        </a>
-                    </li>
-                </ul>
-                <h1><img src="../images/mundo-canino-logo.png" alt="Logo Mundo Canino">
-                    Mundo Canino</h1>
-                <ul>
-                    <li>
-                        <a href="inicio_sesion.html">
-                            Iniciar sesion
-                        </a>
-                    </li>
-                    <li>
-                        <a href="registro.html">
-                            Registrarse
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <!-- /nav-->
-            <div class="content-grid">
-                <h2 class="tituloAzul">Crear un usuario</h2>
-                <p>Completa los campos para generar tu usuario personal en el sitio.</p>
-            </div>
-            <form data-aos="zoom-in" data-aos-duration="1000">
-                <fieldset>
-                    <div>
-                        <label for="name">
-                            Usuario
-                        </label>
-                        <input type="text" name="name" required="required">
-                    </div>
-                    <div>
-                        <label for="name">
-                            Contraseña
-                        </label>
-                        <input type="password" name="name" required="required">
-                    </div>
-                    <div>
-                        <label for="name">
-                            Repetir contraseña
-                        </label>
-                        <input type="password" name="name" required="required">
-                    </div>
-                    <div>
-                        <label for="name">
-                            Nombre completo
-                        </label>
-                        <input type="text" name="name" required="required">
-                    </div>
-                    <div>
-                        <label for="email">
-                            Email
-                        </label>
-                        <input type="email" name="mail" required="required">
-                    </div>
-                    <div>
-                        <label for="sexo">
-                            Sexo
-                        </label>
-                        <div>
-                            <input type="radio" name="sexo" value="hombre">
-                            Hombre
-                            <input type="radio" name="sexo" value="mujer">
-                            Mujer
-                            <input type="radio" name="sexo" value="otro">
-                            Otro
+        <div class="container">
+            <!--NAV-bootstrap-->
+            <div class="row">
+                <div class="col-sm-12">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand " href="../index.html"><img
+                            class="d-inline-block align-text-top"
+                            src="../images/mundo-canino-logo.png"
+                            alt=""
+                            width="20">
+                            Mundo Canino</a>
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="raciones.html">Raciones</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a
+                                        class="nav-link dropdown-toggle"
+                                        href=""
+                                        id="navbarDropdown"
+                                        role="button"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Razas
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li>
+                                            <a class="dropdown-item" href="razas_grandes.html">Grandes</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="razas_medianas.html">Medianas</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="razas_pequenas.html">Pequeñas</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="d-flex navbar-nav mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="inicio_sesion.html">Iniciar sesión</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="registro.html">Registrarse</a>
+                                </li>
+                            </ul>
                         </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 offset-sm-3">
+                    <!-- Default form register -->
+                    <form class="text-center p-5" action="#!">
+                        <p class="h4 mb-4">Registro</p>
+                        <div class="form-row mb-4">
+                            <div class="col">
+                                <!-- First name -->
+                                <input
+                                    type="text"
+                                    id="defaultRegisterFormFirstName"
+                                    class="form-control"
+                                    placeholder="Primer nombre">
+                            </div>
+                            <div class="col">
+                                <!-- Last name -->
+                                <input
+                                    type="text"
+                                    id="defaultRegisterFormLastName"
+                                    class="form-control"
+                                    placeholder="Apellido">
+                            </div>
+                        </div>
+
+                        <!-- E-mail -->
+                        <input
+                            type="email"
+                            id="defaultRegisterFormEmail"
+                            class="form-control mb-4"
+                            placeholder="E-mail">
+
+                        <!-- Password -->
+                        <input
+                            type="password"
+                            id="defaultRegisterFormPassword"
+                            class="form-control"
+                            placeholder="Contraseña"
+                            aria-describedby="defaultRegisterFormPasswordHelpBlock">
+                        <!-- Phone number -->
+                        <input
+                            type="text"
+                            id="defaultRegisterPhonePassword"
+                            class="form-control"
+                            placeholder="Phone number"
+                            aria-describedby="defaultRegisterFormPhoneHelpBlock">
+                        <!-- Newsletter -->
+                        <div class="custom-control custom-checkbox">
+                            <input
+                                type="checkbox"
+                                class="custom-control-input"
+                                id="defaultRegisterFormNewsletter">
+                            <label class="custom-control-label" for="defaultRegisterFormNewsletter">Suscribirse a nuestro correo</label>
+                        </div>
+
+                        <!-- Sign up button -->
+                        <button class="btn btn-info my-4 btn-block" type="submit">Registrarse</button>
+
+                        <!-- Social register -->
+                        <p>O Registrarse con:</p>
+
+                        <a href="#" class="mx-2" role="button">
+                            <i class="fab fa-facebook-f light-blue-text"></i>
+                        </a>
+                        <a href="#" class="mx-2" role="button">
+                            <i class="fab fa-twitter light-blue-text"></i>
+                        </a>
+                        <a href="#" class="mx-2" role="button">
+                            <i class="fab fa-linkedin-in light-blue-text"></i>
+                        </a>
+                        <a href="#" class="mx-2" role="button">
+                            <i class="fab fa-github light-blue-text"></i>
+                        </a>
+
+                        <hr>
+
+                        <!-- Terms of service -->
+                        <p>Al Registrarte aceptas nuestros
+                            <a href="#" target="_blank">Términos de servicio</a>
+
+                        </form>
+                        <!-- Default form register -->
                     </div>
-                    <label for="notificaciones">
-                        Deseas recibir notificaciones?
-                    </label>
-                    <input type="checkbox">
-                    <div>
-                        <input class="btn btn-primary" type="submit" value="Enviar">
-                        <input class="btn btn-warning" type="reset" value="Borrar todo">
-                    </div>
-                </fieldset>
-            </form>
-            <div class="footer-grid">
-                <footer>
-                    <nav class="nav-footer">
-                        <ul>
-                            <li>
-                                <a href="contacto.html">
-                                    Contacto
-                                </a>
+                </div>
+                <div class="row">
+                    <footer class="py-3 my-4">
+                        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                            <li class="nav-item">
+                                <a href="../index.html" class="nav-link px-2 text-muted fw-bold">Inicio</a>
                             </li>
-                            <li>
-                                <p>Todos los derechos reservados. 2022</p>
+                            <li class="nav-item">
+                                <a href="contacto.html" class="nav-link px-2 text-muted fw-bold">Contacto</a>
                             </li>
                         </ul>
-                    </nav>
-                </footer>
+                        <p class="text-center text-muted">© 2022 todos los derechos reservados</p>
+                    </footer>
+                </div>
             </div>
         </div>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

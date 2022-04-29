@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+.container{
+    background: white;
+}
+
 /* grid */
 
 .wrapper-grid {
@@ -80,129 +84,17 @@ body {
     clear: both;
 }
 
-/* CSS de barra de navegacion */
-
-/* img {
-    max-width: 100%;
-    height: auto;
-}
-
-
-.nav-top {
-    background: #dfdfdf;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em;
-}
-
-.nav-top h1 {
-    margin: 0;
-    font-size: 1.5rem;
-}
-
-.nav-top h1 img {
-    width: auto;
-    height: 1.5rem;
-
-} */
-
 a {
     color: black;
     text-decoration: none;
 }
 
+a i{
+    font-size: 1.8em;
+}
+
 .razas-x-tamanio article {
     margin-bottom: 100px;
-}
-
-.parallax h3 {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    border-radius: 5px;
-    line-height: 3em;
-    transform: translateY(130px);
-    display: block;
-    text-align: center;
-}
-
-.parallax a h3 {
-    text-align: center;
-}
-
-.parallax .btn {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-}
-/* 
-.nav-login a,
-.nav-top a {
-    padding: 0.3em;
-    display: inline-block;
-    font-weight: 400;
-}
-
-.nav-desplegable {
-    position: relative;
-}
-
-.nav-desplegable:hover .nav-submenu {
-    display: block;
-}
-
-.nav-submenu {
-    position: absolute;
-    left: 0;
-    background-color: white;
-    border-radius: 3px;
-    display: none;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, .2);
-}
-
-.nav-submenu li {
-    margin: 1em;
-    display: block;
-}
-
-nav ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-nav ul li {
-    display: inline;
-} */
-
-/* FIN CSS de barra de navegacion */
-
-.parallax {
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    width: 100%;
-    position: relative;
-    border-radius: 4px;
-    background-position-y: 0;
-
-}
-
-.imgGrandes {
-    background-image: url("../images/fondoRazasGrandes.jfif");
-}
-
-.imgMedianos {
-    background-image: url("../images/mediumBreed4.jpg");
-}
-
-.imgPequenos {
-    background-image: url("../images/smallBreed3.jpg");
 }
 
 /* .palabra = class          # = ID */
@@ -250,17 +142,6 @@ nav ul li {
 main.row {
     padding-bottom: 1em;
 }
-fieldset {
-    padding: 0.8em;
-    display: inline;
-    border: 1px solid #d6d6d6;
-    padding: 2em;
-    background: white;
-}
-
-fieldset div {
-    margin-bottom: 1em;
-}
 
 form input[type="text"],
 form input[type="password"],
@@ -268,7 +149,6 @@ form input[type="email"],
 form input[type="tel"] {
     margin: 15px 0;
     padding: 10px 8px;
-    width: 100%;
     outline: none;
     border: 1px solid #bbb;
     border-radius: 15px;
@@ -282,6 +162,21 @@ form input[type=text]:focus {
     border-color: cornflowerblue;
 }
 
+
+
+fieldset input[type="text"],
+fieldset input[type="password"],
+fieldset input[type="email"] {
+    display: block;
+    margin-bottom: 0.2em;
+}
+
+.navbar-light .navbar-brand {
+    padding-left: 10px;
+}
+
+/*CSS del footer */
+
 footer {
     border-radius: 10px;
     background: #dfdfdf;
@@ -291,79 +186,6 @@ footer .nav-footer li {
     padding: 1em;
 }
 
-fieldset input[type="text"],
-fieldset input[type="password"],
-fieldset input[type="email"] {
-    display: block;
-    margin-bottom: 0.2em;
-}
-
-/*CSS del footer */
-.nav-footer {
-    padding: 0;
-    text-align: center;
-}
-
-.nav-footer li {
-    padding: 3em;
-}
-
-input[type=tel] {
-    display: block;
-}
-
-/* tables */
-
-.raciones table {
-    border: 1px solid #cacaca;
-    margin: 2em 0;
-    padding: 2em;
-    border-radius: 5px;
-    background: white;
-}
-
-table {
-    border-collapse: separate;
-    border-spacing: 0.5em;
-}
-
-.center {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-table,
-td,
-th {
-    border: none;
-}
-
-.cantidad-carrito {
-    width: 4em;
-}
-
-.no-border {
-    width: 4em;
-    border: none;
-}
-
-table .imagen-carrito:hover {
-    cursor: pointer;
-}
-
-td {
-    text-align: center;
-}
-
-.tabla-encabezado {
-    border-radius: 3px;
-    width: 8em;
-    padding: 0.5em 1em;
-    line-height: 1.2;
-    background-color: rgb(236 236 236 / 85%);
-    white-space: nowrap;
-    border-bottom: 4px solid rgb(60 60 188 / 85%);
-}
 
 .carousel-item img {
     object-fit: cover;
@@ -376,7 +198,6 @@ td {
 .col-sm-3 iframe {
     margin: 5em;
 }
-/* tables */
 
 .paragraph-contact {
     margin: 70px 0 30px;
@@ -419,15 +240,6 @@ td {
         display: block;
     }
 
-    .nav-top {
-        flex-direction: column;
-        position: absolute;
-    }
-
-    .nav-top h1 {
-        display: none;
-    }
-
     .raciones table {
         border: 1px solid #cacaca;
         margin: 2em 0;
@@ -440,8 +252,6 @@ td {
         border-collapse: separate;
         border-spacing: 0.5em;
     }
-
-
 
     table,
     th,

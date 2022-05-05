@@ -1,15 +1,5 @@
-//variables
-$white: #fff;
-$black: #000;
-$blue: #5f9ea0;
-$lightblue: #7599b6;
-$red: #b64545;
-$lightgray: #d8d8d8;
-$darkgray: #767584;
-$navy: #191966;
-$border-radius-xs : 6px;
-$border-radius-md: 6px;
-$border-radius-xl: 8px;
+@import "variables";
+
 
 //reusables
 $primary-color: $blue;

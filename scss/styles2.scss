@@ -1,20 +1,71 @@
+//variables
+$white: #fff;
+$black: #000;
+$blue: #5f9ea0;
+$lightblue: #7599b6;
+$red: #b64545;
+$lightgray: #d8d8d8;
+$darkgray: #767584;
+$navy: #191966;
+$border-radius-xs : 6px;
+$border-radius-md: 6px;
+$border-radius-xl: 8px;
 
+//reusables
+$primary-color: $blue;
+$secondary-color: $lightblue;
+$complementary-color: $darkgray;
+$warning-color: $red;
+$text-color: $black;
+$text-color-contrast: $white;
+$title-color: $navy; 
+
+
+//componentes
+@mixin card {
+    border-radius: $border-radius-xl;
+    background-color: $text-color-contrast;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+//mixins
+@mixin btn {
+    color: $text-color-contrast;
+    background-color: $primary-color;
+    border-radius: $border-radius-md;
+    padding: 8px 16px;
+    margin: 10px auto;
+}
+
+@mixin no-border {
+    border-radius: 0;
+    border-color: unset;
+    border-style: none;
+}
+@mixin reset-link {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+//variables ends
 
 body {
-    background-color: rgb(118, 117, 132);
+    background-color: $complementary-color;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.2;
 }
 
 .container{
-    background: white;
+    background: $white;
 }
 
 h1 {
-    color: rgb(45, 4, 4);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-    color: rgb(25, 25, 102);
+    color: $title-color;
     padding-bottom: 1rem;
 }
 
@@ -23,7 +74,7 @@ h1 {
     box-sizing: border-box;
 }
 a {
-    color: black;
+    color: $text-color;
     text-decoration: none;
 }
 
@@ -37,11 +88,8 @@ a i{
 }
 
 .popularbreeds {
-    border-radius: 8px;
-    background-color: white;
-    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
-    padding: 1.5rem;
-    text-align: center;
+    @include card;
+    border: 1px solid $lightgray;
 }
 
 .popularbreeds img {
@@ -49,32 +97,24 @@ a i{
 }
 
 .btn {
-    text-decoration: none;
-    border-radius: 5px;
-    border: 0;
-    color: white;
-    background-color: grey;
-    padding: 8px 16px;
-    margin: 10px auto;
-    display: inline-block;
-    text-align: center;
+    @include no-border;
+    @include reset-link;
+    @include btn;
+
+    &:hover {
+        opacity: 0.8;
+    }
+    .btn-primary {
+        background-color: $primary-color;
+    }
+    .btn-secondary {
+        background-color: $secondary-color;
+    }
+    .btn-warning {
+        background-color: $warning-color;
+    }
 }
 
-.btn:hover {
-    opacity: 0.8;
-}
-
-.btn-primary {
-    background-color: cadetblue;
-}
-
-.btn-secondary {
-    background-color: rgb(117, 153, 182);
-}
-
-.btn-warning {
-    background-color: rgb(182, 69, 69);
-}
 
 main.row {
     padding-bottom: 1em;
@@ -87,7 +127,7 @@ form input[type="tel"] {
     margin: 15px 0;
     padding: 10px 8px;
     outline: none;
-    border: 1px solid #bbb;
+    border: 1px solid $lightgray;
     border-radius: 15px;
     display: inline-block;
     box-sizing: border-box;
@@ -149,6 +189,7 @@ footer .nav-footer li {
     height: 0;
     overflow: hidden;
     margin-bottom: 2rem;
+    border-radius: $border-radius-xs;
 }
 .video-container embed,
 .video-container iframe,

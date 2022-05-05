@@ -1,13 +1,11 @@
 body {
   background-color: #767584;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.2; }
+  font-family: Arial, Helvetica, sans-serif; }
 
 .container {
-  background: white; }
+  background: #fff; }
 
 h1 {
-  color: #2d0404;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: center;
   color: #191966;
@@ -17,7 +15,7 @@ h1 {
   box-sizing: border-box; }
 
 a {
-  color: black;
+  color: #000;
   text-decoration: none; }
 
 a i {
@@ -28,36 +26,35 @@ a i {
 
 .popularbreeds {
   border-radius: 8px;
-  background-color: white;
+  background-color: #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   padding: 1.5rem;
-  text-align: center; }
+  text-align: center;
+  border: 1px solid #d8d8d8; }
 
 .popularbreeds img {
   border-radius: 8px 8px 0 0; }
 
 .btn {
+  border-radius: 0;
+  border-color: unset;
+  border-style: none;
   text-decoration: none;
-  border-radius: 5px;
-  border: 0;
-  color: white;
-  background-color: grey;
+  color: #fff;
+  background-color: #5f9ea0;
+  border-radius: 6px;
   padding: 8px 16px;
-  margin: 10px auto;
-  display: inline-block;
-  text-align: center; }
-
-.btn:hover {
-  opacity: 0.8; }
-
-.btn-primary {
-  background-color: cadetblue; }
-
-.btn-secondary {
-  background-color: #7599b6; }
-
-.btn-warning {
-  background-color: #b64545; }
+  margin: 10px auto; }
+  .btn:hover {
+    text-decoration: none; }
+  .btn:hover {
+    opacity: 0.8; }
+  .btn .btn-primary {
+    background-color: #5f9ea0; }
+  .btn .btn-secondary {
+    background-color: #7599b6; }
+  .btn .btn-warning {
+    background-color: #b64545; }
 
 main.row {
   padding-bottom: 1em; }
@@ -69,7 +66,7 @@ form input[type="tel"] {
   margin: 15px 0;
   padding: 10px 8px;
   outline: none;
-  border: 1px solid #bbb;
+  border: 1px solid #d8d8d8;
   border-radius: 15px;
   display: inline-block;
   box-sizing: border-box;
@@ -118,7 +115,8 @@ footer .nav-footer li {
   padding-top: 30px;
   height: 0;
   overflow: hidden;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  border-radius: 6px; }
 
 .video-container embed,
 .video-container iframe,

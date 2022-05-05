@@ -1,47 +1,8 @@
 @import "variables";
+@import "reusables";
+@import "mixins";
+@import "componentes";
 
-
-//reusables
-$primary-color: $blue;
-$secondary-color: $lightblue;
-$complementary-color: $darkgray;
-$warning-color: $red;
-$text-color: $black;
-$text-color-contrast: $white;
-$title-color: $navy; 
-
-
-//componentes
-@mixin card {
-    border-radius: $border-radius-xl;
-    background-color: $text-color-contrast;
-    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
-    padding: 1.5rem;
-    text-align: center;
-}
-
-//mixins
-@mixin btn {
-    color: $text-color-contrast;
-    background-color: $primary-color;
-    border-radius: $border-radius-md;
-    padding: 8px 16px;
-    margin: 10px auto;
-}
-
-@mixin no-border {
-    border-radius: 0;
-    border-color: unset;
-    border-style: none;
-}
-@mixin reset-link {
-    text-decoration: none;
-    &:hover {
-        text-decoration: none;
-    }
-}
-
-//variables ends
 
 body {
     background-color: $complementary-color;
@@ -52,26 +13,25 @@ body {
     background: $white;
 }
 
+// genericos de etiqueta
 h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     color: $title-color;
     padding-bottom: 1rem;
 }
-
-// reusables
 * {
     box-sizing: border-box;
 }
 a {
     color: $text-color;
     text-decoration: none;
+    i{
+        font-size: 1.8em;
+    }
 }
 
-a i{
-    font-size: 1.8em;
-}
-// reusables
+//genericos de etiqueta
 
 .razas-x-tamanio article {
     margin-bottom: 100px;
@@ -145,7 +105,7 @@ fieldset input[type="email"] {
 
 footer {
     border-radius: 10px;
-    background: #dfdfdf;
+    background: $lightgray;
 }
 
 footer .nav-footer li {

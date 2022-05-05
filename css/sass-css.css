@@ -17,9 +17,8 @@ h1 {
 a {
   color: #000;
   text-decoration: none; }
-
-a i {
-  font-size: 1.8em; }
+  a i {
+    font-size: 1.8em; }
 
 .razas-x-tamanio article {
   margin-bottom: 100px; }
@@ -88,7 +87,7 @@ fieldset input[type="email"] {
 /*CSS del footer */
 footer {
   border-radius: 10px;
-  background: #dfdfdf; }
+  background: #d8d8d8; }
 
 footer .nav-footer li {
   padding: 1em; }

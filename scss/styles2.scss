@@ -9,7 +9,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container{
+.container {
     background: $white;
 }
 
@@ -20,13 +20,17 @@ h1 {
     color: $title-color;
     padding-bottom: 1rem;
 }
+
 * {
     box-sizing: border-box;
 }
+
 a {
+    @include reset-link;
     color: $text-color;
     text-decoration: none;
-    i{
+
+    i {
         font-size: 1.8em;
     }
 }
@@ -54,12 +58,15 @@ a {
     &:hover {
         opacity: 0.8;
     }
+
     .btn-primary {
         background-color: $primary-color;
     }
+
     .btn-secondary {
         background-color: $secondary-color;
     }
+
     .btn-warning {
         background-color: $warning-color;
     }
@@ -106,10 +113,10 @@ fieldset input[type="email"] {
 footer {
     border-radius: 10px;
     background: $lightgray;
-}
 
-footer .nav-footer li {
-    padding: 1em;
+    .nav-footer li {
+        padding: 1em;
+    }
 }
 
 
@@ -132,6 +139,7 @@ footer .nav-footer li {
 .carousel {
     margin: auto;
 }
+
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
@@ -140,16 +148,18 @@ footer .nav-footer li {
     overflow: hidden;
     margin-bottom: 2rem;
     border-radius: $border-radius-xs;
+
+    embed,
+    iframe,
+    object {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 }
-.video-container embed,
-.video-container iframe,
-.video-container object {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
+
 .cantidad-carrito {
     width: 50px;
 }

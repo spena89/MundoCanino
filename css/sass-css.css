@@ -1,35 +1,39 @@
 body {
   background-color: #767584;
-  font-family: Arial, Helvetica, sans-serif;
-}
+  font-family: Arial, Helvetica, sans-serif; }
 
 .container {
-  background: #fff;
-}
+  background: #fff; }
+
+.btn-primary {
+  background-color: #5f9ea0; }
+
+.btn-secondary {
+  background-color: #7599b6; }
+
+.btn-warning {
+  background-color: #b64545; }
 
 h1 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: center;
   color: #191966;
-  padding-bottom: 1rem;
-}
+  padding-bottom: 1rem; }
 
 * {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 a {
-  color: #000;
   text-decoration: none;
-}
-
-a i {
-  font-size: 1.8em;
-}
+  color: #000;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+  a i {
+    font-size: 1.8em; }
 
 .razas-x-tamanio article {
-  margin-bottom: 100px;
-}
+  margin-bottom: 100px; }
 
 .popularbreeds {
   border-radius: 8px;
@@ -37,12 +41,10 @@ a i {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   padding: 1.5rem;
   text-align: center;
-  border: 1px solid #d8d8d8;
-}
+  border: 1px solid #d8d8d8; }
 
 .popularbreeds img {
-  border-radius: 8px 8px 0 0;
-}
+  border-radius: 8px 8px 0 0; }
 
 .btn {
   border-radius: 0;
@@ -53,32 +55,14 @@ a i {
   background-color: #5f9ea0;
   border-radius: 6px;
   padding: 8px 16px;
-  margin: 10px auto;
-}
-
-.btn:hover {
-  text-decoration: none;
-}
-
-.btn:hover {
-  opacity: 0.8;
-}
-
-.btn .btn-primary {
-  background-color: #5f9ea0;
-}
-
-.btn .btn-secondary {
-  background-color: #7599b6;
-}
-
-.btn .btn-warning {
-  background-color: #b64545;
-}
+  margin: 10px auto; }
+  .btn:hover {
+    text-decoration: none; }
+  .btn:hover {
+    opacity: 0.8; }
 
 main.row {
-  padding-bottom: 1em;
-}
+  padding-bottom: 1em; }
 
 form input[type="text"],
 form input[type="password"],
@@ -91,54 +75,43 @@ form input[type="tel"] {
   border-radius: 15px;
   display: inline-block;
   box-sizing: border-box;
-  transition: 0.2s ease all;
-}
+  transition: 0.2s ease all; }
 
 form input[type="password"]:focus,
 form input[type=text]:focus {
-  border-color: cornflowerblue;
-}
+  border-color: cornflowerblue; }
 
 fieldset input[type="text"],
 fieldset input[type="password"],
 fieldset input[type="email"] {
   display: block;
-  margin-bottom: 0.2em;
-}
+  margin-bottom: 0.2em; }
 
 .navbar-light .navbar-brand {
-  padding-left: 10px;
-}
+  padding-left: 10px; }
 
 /*CSS del footer */
 footer {
   border-radius: 10px;
-  background: #d8d8d8;
-}
-
-footer .nav-footer li {
-  padding: 1em;
-}
+  background: #d8d8d8; }
+  footer .nav-footer li {
+    padding: 1em; }
 
 .carousel-item img {
   object-fit: cover;
   object-position: center;
   height: 50vh;
   overflow: hidden;
-  margin-top: 1rem;
-}
+  margin-top: 1rem; }
 
 .col-sm-3 iframe {
-  margin: 5em;
-}
+  margin: 5em; }
 
 .paragraph-contact {
-  margin: 70px 0 30px;
-}
+  margin: 70px 0 30px; }
 
 .carousel {
-  margin: auto;
-}
+  margin: auto; }
 
 .video-container {
   position: relative;
@@ -147,19 +120,15 @@ footer .nav-footer li {
   height: 0;
   overflow: hidden;
   margin-bottom: 2rem;
-  border-radius: 6px;
-}
-
-.video-container embed,
-.video-container iframe,
-.video-container object {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+  border-radius: 6px; }
+  .video-container embed,
+  .video-container iframe,
+  .video-container object {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
 
 .cantidad-carrito {
-  width: 50px;
-}
+  width: 50px; }

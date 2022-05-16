@@ -1,5 +1,6 @@
 body {
-  background-color: #767584;
+  background-image: url("../images/paw-background.jpg");
+  background-size: contain;
   font-family: Arial, Helvetica, sans-serif; }
 
 .container {
@@ -88,7 +89,10 @@ fieldset input[type="email"] {
   margin-bottom: 0.2em; }
 
 .navbar-light .navbar-brand {
-  padding-left: 10px; }
+  padding-left: 10px;
+  background-color: rgba(95, 158, 160, 0.2);
+  padding: 5px;
+  border-radius: 5px; }
 
 /*CSS del footer */
 footer {

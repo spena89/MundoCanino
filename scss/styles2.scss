@@ -3,9 +3,9 @@
 @import "mixins";
 @import "componentes";
 
-
 body {
-    background-color: $complementary-color;
+    background-image: url("../images/paw-background.jpg");
+    background-size: contain;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -15,8 +15,7 @@ body {
 
 // genericos de etiqueta
 
-@each $var,
-$color in $colores {
+@each $var, $color in $colores {
     .btn-#{$var} {
         background-color: $color;
     }
@@ -68,7 +67,6 @@ a {
     }
 }
 
-
 main.row {
     padding-bottom: 1em;
 }
@@ -92,7 +90,6 @@ form input[type=text]:focus {
     border-color: cornflowerblue;
 }
 
-
 fieldset input[type="text"],
 fieldset input[type="password"],
 fieldset input[type="email"] {
@@ -102,6 +99,9 @@ fieldset input[type="email"] {
 
 .navbar-light .navbar-brand {
     padding-left: 10px;
+    background-color:rgba($primary-color, 0.2);
+    padding: 5px;
+    border-radius: 5px;
 }
 
 /*CSS del footer */
@@ -114,7 +114,6 @@ footer {
         padding: 1em;
     }
 }
-
 
 .carousel-item img {
     object-fit: cover;

@@ -104,7 +104,7 @@ footer {
 .carousel-item img {
   object-fit: cover;
   object-position: center;
-  height: 50vh;
+  height: 65vh;
   overflow: hidden;
   margin-top: 1rem; }
 

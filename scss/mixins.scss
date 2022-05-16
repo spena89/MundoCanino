@@ -12,8 +12,10 @@
     border-color: unset;
     border-style: none;
 }
+
 @mixin reset-link {
     text-decoration: none;
+
     &:hover {
         text-decoration: none;
     }

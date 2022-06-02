@@ -155,3 +155,29 @@ footer {
 
 .cantidad-carrito {
   width: 50px; }
+
+.parallax-index-top {
+  background-image: url("../images/FondoPerrosMedianos.jpg");
+  text-align: center;
+  line-height: 50vh;
+  /* Height */
+  height: 50vh;
+  /* Effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1px; }
+
+.parallax-index-bot {
+  background-image: url("../images/parallax-home-bot.webp");
+  text-align: center;
+  line-height: 50vh;
+  /* Height */
+  height: 50vh;
+  /* Effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1px; }

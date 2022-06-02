@@ -178,3 +178,13 @@ footer {
 .cantidad-carrito {
     width: 50px;
 }
+
+
+.parallax-index-top {
+    @include parallax ($fondo-parallax-home);
+}
+
+.parallax-index-bot{
+    @include parallax ($fondo-parallax-home-bot);
+    
+}

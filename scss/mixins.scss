@@ -21,8 +21,8 @@
 
 @mixin parallax ($imagen) {
         background-image: url($imagen);
-        text-align: center;
         line-height: 2vh;
+        text-align: center;
         /* Height */
         height: 50vh;
         /* Effect */
@@ -30,5 +30,4 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size:cover;
-        border-radius: 1px;
     }

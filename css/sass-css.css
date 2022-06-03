@@ -157,9 +157,9 @@ footer {
   width: 50px; }
 
 .parallax-index-top {
-  background-image: url("../images/FondoPerrosMedianos.jpg");
+  background-image: url("../images/parallax-top.jpg");
   text-align: center;
-  line-height: 50vh;
+  line-height: 2vh;
   /* Height */
   height: 50vh;
   /* Effect */
@@ -168,11 +168,24 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 1px; }
+  .parallax-index-top div {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    width: 70%;
+    margin: auto;
+    font-weight: bold;
+    border-radius: 5px; }
+  .parallax-index-top h1 {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff; }
+  .parallax-index-top img {
+    height: max-content;
+    padding-top: 20px; }
 
 .parallax-index-bot {
   background-image: url("../images/parallax-home-bot.webp");
   text-align: center;
-  line-height: 50vh;
+  line-height: 2vh;
   /* Height */
   height: 50vh;
   /* Effect */

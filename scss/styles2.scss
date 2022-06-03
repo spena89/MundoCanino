@@ -182,6 +182,24 @@ footer {
 
 .parallax-index-top {
     @include parallax ($fondo-parallax-home);
+    div{
+        background-color: rgba(#ffffff, 0.7);
+        padding: 10px;
+        width: 70%;
+        margin: auto;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+    h1 {
+        background-color: rgba(#000000, 0.7);
+        color: $text-color-contrast;
+    }
+    img{
+height:max-content;
+padding-top: 20px;
+
+    }
+    
 }
 
 .parallax-index-bot{

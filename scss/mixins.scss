@@ -22,13 +22,13 @@
 @mixin parallax ($imagen) {
         background-image: url($imagen);
         text-align: center;
-        line-height: 50vh;
+        line-height: 2vh;
         /* Height */
         height: 50vh;
         /* Effect */
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size:cover;
         border-radius: 1px;
     }

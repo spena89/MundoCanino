@@ -1,5 +1,3 @@
-# MundoCanino
-
 <h1 align="center">Hola 👋, soy Santiago Pena</h1>
 <h3 align="center">Desarrollador full-stack en proceso!</h3>
 

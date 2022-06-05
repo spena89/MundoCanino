@@ -20,14 +20,14 @@
 }
 
 @mixin parallax ($imagen) {
-        background-image: url($imagen);
-        line-height: 2vh;
-        text-align: center;
-        /* Height */
-        height: 50vh;
-        /* Effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size:cover;
-    }
+    background-image: url($imagen);
+    line-height: 2vh;
+    text-align: center;
+    /* Height */
+    height: 50vh;
+    /* Effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

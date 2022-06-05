@@ -177,10 +177,10 @@ footer {
   .parallax-index-top h1 {
     background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
-    padding: 5px 0 5px 0; }
+    padding: 5px 0; }
   .parallax-index-top img {
     height: max-content;
-    padding: 10px 0 10px 0; }
+    padding: 10px 0; }
 
 .parallax-index-bot {
   background-image: url("../images/parallax-home-bot.webp");

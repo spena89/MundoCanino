@@ -1,0 +1,33 @@
+//mixins
+@mixin btn {
+    color: $text-color-contrast;
+    background-color: $primary-color;
+    border-radius: $border-radius-md;
+    padding: 8px 16px;
+    margin: 10px auto;
+}
+
+@mixin no-border {
+    border-radius: 0;
+    border-color: unset;
+    border-style: none;
+}
+@mixin reset-link {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+@mixin parallax ($imagen) {
+    background-image: url($imagen);
+    line-height: 2vh;
+    text-align: center;
+    /* Height */
+    height: 50vh;
+    /* Effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

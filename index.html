@@ -4,136 +4,206 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta
+            name="description"
+            content="Información sobre razas de perros más populares y venta de las mejores raciones para tu peludo amigo">
+        <meta
+            name="keywords"
+            content="perros, canino, adopción de perros, raciones de perro">
         <title>Mundo canino</title>
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/sass-css.css">
     </head>
 
     <body>
-        <div class="wrapper-grid">
-            <!-- nav-->
-            <nav class="nav-grid nav-top">
-                <ul>
-                    <li>
-                        <a href="#" class="noDeco">
-                            Inicio
-                        </a>
-                    </li>
-                    <li class="nav-desplegable">
-                        <a href="pages/Razas.html">
-                            Razas
-                        </a>
-                        <ul class="nav-submenu">
-                            <!-- empieza SUB-NAV-->
-                            <li>
-                                <a href="pages/razas_grandes.html">
-                                    Grandes
-                                </a>
+        <div class="container">
+            <!--NAV-bootstrap-->
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand " href="index.html"><img
+                        class="d-inline-block align-text-top"
+                        src="images/mundo-canino-logo.png"
+                        alt="logo mundo canino"
+                        width="20">
+                        Mundo Canino</a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/raciones.html">Raciones</a>
                             </li>
-                            <li>
-                                <a href="pages/razas_medianas.html">
-                                    Medianas
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link dropdown-toggle"
+                                    href=""
+                                    id="navbarDropdown"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Razas
                                 </a>
-                            </li>
-                            <li>
-                                <a href="pages/razas_pequenas.html">
-                                    Pequeñas
-                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <a class="dropdown-item" href="pages/razas_grandes.html">Grandes</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="pages/razas_medianas.html">Medianas</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="pages/razas_pequenas.html">Pequeñas</a>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
-                    </li>
-                    <!-- finaliza SUB-NAV-->
-                    <li>
-                        <a href="pages/raciones.html">
-                            Raciones
+                        <ul class="d-flex navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/inicio_sesion.html">Iniciar sesión</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/registro.html">Registrarse</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- finaliza NAV-bootstrap -->
+            <div class="row">
+                <div class="px-3 py-3 my-3">
+                    <div class="parallax-index-top">
+                        <img
+                            class="mx-auto"
+                            src="images/mundo-canino-logo.png"
+                            alt="logo mundo canino"
+                            width="72 px"
+                            height="57 px"
+                            ;=";">
+                        <h1 class="display-5 fw-bold">Mundo Canino</h1>
+                        <div>Es un sitio web donde podes encontrar toda la información necesaria sobre
+                            tu perro. Con ello podrás elegir la mejor ración que se adapte a tu amigo y
+                            presupuesto. Encontrá las razas más populares de perros en estos ultimos años
+                        </div>
+                    </div>
+                </div>
+                <h2 class="mb-4" data-aos="fade-right" data-aos-duration="1200">Razas populares del 2022</h2>
+                <p>Este es el top 3 de las razas más buscadas del último año. Encontrá en cada
+                    tarjeta la info completa de cada raza y enterate por qué la gente las ha estado
+                    buscando</p>
+            </div>
+            <main class="row">
+                <div class="col-sm-4">
+                    <div class="popularbreeds" data-aos="fade-up" data-aos-duration="900">
+                        <a href="https://es.wikipedia.org/wiki/Border_collie">
+                            <img class="img-fluid" src="images/Border_collie.jpg" alt="Border Collie">
                         </a>
-                    </li>
-                </ul>
-                <h1><img src="images/mundo-canino-logo.png" alt="Logo Mundo Canino">
-                    Mundo Canino</h1>
-                <ul>
-                    <li>
-                        <a href="pages/inicio_sesion.html">
-                            Iniciar sesion
+                        <h3 class="card-titles">Border Collie</h3>
+                        <p>
+                            El
+                            <strong>Border Collie</strong>
+                            es una raza de perro de trabajo incluido dentro de la denominación Collie. La
+                            raza surgió en la frontera entre Escocia e Inglaterra como perro pastor, sobre
+                            todo para trabajar con rebaños de ovejas. Es una de las razas más inteligentes
+                            hasta el momento. Han competido con gran éxito en torneos de deportes caninos.</p>
+                        <a href="https://es.wikipedia.org/wiki/Border_collie" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="popularbreeds" data-aos="fade-up" data-aos-duration="900">
+                        <a href="https://es.wikipedia.org/wiki/Labrador_retriever">
+                            <img class="img-fluid" src="images/labrador.jpg" alt="Labrador">
                         </a>
-                    </li>
-                    <li>
-                        <a href="pages/registro.html">
-                            Registrarse
+                        <h3 class="card-titles">Labrador</h3>
+                        <p>
+                            El
+                            <strong>Labrador Retriever</strong>
+                            es una raza canina originaria de Terranova, Canadá. Es una de las razas más
+                            populares del mundo por la cantidad de ejemplares registrados. Su gentileza,
+                            inteligencia y nobleza hacen que los labradores sean considerados buenos
+                            compañeros para personas de todas las edades</p>
+                        <a
+                            href="https://es.wikipedia.org/wiki/Labrador_retriever"
+                            class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="popularbreeds" data-aos="fade-up" data-aos-duration="900">
+                        <a href="https://es.wikipedia.org/wiki/Pastor_blanco_suizo">
+                            <img class="img-fluid" src="images/ovejero_suizo.jpg" alt="Ovejero Suizo">
                         </a>
-                    </li>
-                </ul>
-            </nav>
-            <!-- /nav-->
-            <div class="content-grid">
-                <h2 class="tituloAzul">Razas Populares</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos ducimus velit
-                    laboriosam error architecto sunt temporibus modi libero. Consequatur possimus
-                    illum ullam suscipit nobis dolore maxime enim officia corrupti corporis.</p>
-            </div>
-            <div
-                class="item1-grid popularbreeds"
-                data-aos="fade-right"
-                data-aos-duration="800">
-                <img src="images/Border_collie.jpg" alt="Border Collie">
-                <h3 class="card-titles">Border Collie</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos ducimus velit
-                    laboriosam error architecto sunt
-                    <strong>temporibus modi libero</strong>. Consequatur possimus illum ullam
-                    suscipit nobis dolore maxime enim officia corrupti corporis.</p>
-                <a href="https://es.wikipedia.org/wiki/Border_collie" class="btn btn-primary">Ver más</a>
-            </div>
-            <div class="item2-grid popularbreeds">
-                <img src="images/labrador.jpg" alt="Labrador">
-                <h3 class="card-titles">Labrador</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos ducimus velit
-                    <strong>laboriosam error architecto</strong>
-                    sunt temporibus modi libero. Consequatur possimus illum ullam suscipit nobis
-                    dolore maxime enim officia corrupti corporis.</p>
-                <a
-                    href="https://es.wikipedia.org/wiki/Labrador_retriever"
-                    class="btn btn-primary">Ver más</a>
-            </div>
-            <div
-                class="item3-grid popularbreeds"
-                data-aos="fade-left"
-                data-aos-duration="800">
-                <img src="images/ovejero_suizo.jpg" alt="Ovejero Suizo">
-                <h3 class="card-titles">Pastor Suizo</h3>
-                <p>
-                    Lorem ipsum
-                    <strong>dolor sit amet consectetur</strong>, adipisicing elit. Quos ducimus
-                    velit laboriosam error architecto sunt temporibus modi libero. Consequatur
-                    possimus illum ullam suscipit nobis dolore maxime enim officia corrupti
-                    corporis.</p>
-                <a
-                    href="https://es.wikipedia.org/wiki/Pastor_blanco_suizo"
-                    class="btn btn-primary">Ver más</a>
-            </div>
-            <div class="footer-grid">
-                <footer>
-                    <nav class="nav-footer">
+                        <h3 class="card-titles">Pastor Suizo</h3>
+                        <p>
+                            El
+                            <strong>Pastor Blanco Suizo</strong>
+                            es una raza canina originaria de Estados Unidos y Canadá que fue transportada a
+                            Suiza y Alemania donde se desarrolló. Tiene como función original ser un perro
+                            de compañía. A pesar de las creencias no es un perro albino, sino que su color
+                            se lo debe a factores genéticos.</p>
+                        <a
+                            href="https://es.wikipedia.org/wiki/Pastor_blanco_suizo"
+                            class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </main>
+            <div class="parallax-index-bot"></div>
+            <footer class="py-3 my-4">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h3>Razas</h3>
                         <ul>
                             <li>
-                                <a href="pages/contacto.html">
-                                    Contacto
-                                </a>
+                                <a href="pages/razas_grandes.html">Razas grandes</a>
                             </li>
                             <li>
-                                <p>Todos los derechos reservados. 2022</p>
+                                <a href="pages/razas_medianas.html">Razas medianas</a>
+                            </li>
+                            <li>
+                                <a href="pages/razas_pequenas.html">Razas pequeñas</a>
                             </li>
                         </ul>
-                    </nav>
-                </footer>
-            </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>Alimento</h3>
+                        <ul>
+                            <li>
+                                <a href="pages/raciones.html">Raciones</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>Cuenta</h3>
+                        <ul>
+                            <li>
+                                <a href="pages/inicio_sesion.html">Iniciar sesión</a>
+                            </li>
+                            <li>
+                                <a href="pages/registro.html">Registrarse</a>
+                            </li>
+                            <li>
+                                <a href="pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </footer>
+
         </div>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
         </script>
+        <script src="js/bootstrap.bundle.min.js"></script>
     </body>
 
 </html>

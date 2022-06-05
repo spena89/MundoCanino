@@ -1,0 +1,12 @@
+@import "variables";
+@import "reusables";
+@import "mixins";
+
+//componentes
+@mixin card {
+    border-radius: $border-radius-xl;
+    background-color: $text-color-contrast;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    padding: 1.5rem;
+    text-align: center;
+}

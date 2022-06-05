@@ -1,0 +1,196 @@
+body {
+  background-image: url("../images/paw-background.jpg");
+  background-size: contain;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.container {
+  background: #fff; }
+
+.btn-primary {
+  background-color: #5f9ea0; }
+
+.btn-secondary {
+  background-color: #7599b6; }
+
+.btn-warning {
+  background-color: #b64545; }
+
+h1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: #191966;
+  padding-bottom: 1rem; }
+
+* {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: #000;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+  a i {
+    font-size: 1.8em; }
+
+.razas-x-tamanio article {
+  margin-bottom: 100px; }
+
+.popularbreeds {
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  text-align: center;
+  border: 1px solid #d8d8d8; }
+
+.popularbreeds img {
+  border-radius: 8px 8px 0 0; }
+
+.btn {
+  border-radius: 0;
+  border-color: unset;
+  border-style: none;
+  text-decoration: none;
+  color: #fff;
+  background-color: #5f9ea0;
+  border-radius: 6px;
+  padding: 8px 16px;
+  margin: 10px auto; }
+  .btn:hover {
+    text-decoration: none; }
+  .btn:hover {
+    opacity: 0.8; }
+
+main.row {
+  padding-bottom: 1em; }
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="tel"] {
+  margin: 15px 0;
+  padding: 10px 8px;
+  outline: none;
+  border: 1px solid #d8d8d8;
+  border-radius: 15px;
+  display: inline-block;
+  box-sizing: border-box;
+  transition: 0.2s ease all; }
+
+form input[type="password"]:focus,
+form input[type=text]:focus {
+  border-color: cornflowerblue; }
+
+fieldset input[type="text"],
+fieldset input[type="password"],
+fieldset input[type="email"] {
+  display: block;
+  margin-bottom: 0.2em; }
+
+.navbar-light .navbar-brand {
+  padding-left: 10px;
+  background-color: rgba(95, 158, 160, 0.2);
+  padding: 5px;
+  border-radius: 5px; }
+
+/*CSS del footer */
+footer {
+  text-decoration: none;
+  border-radius: 10px;
+  background-image: url("../images/footer-background.jpg");
+  background-size: cover;
+  color: #fff;
+  padding: 1rem; }
+  footer:hover {
+    text-decoration: none; }
+  footer .nav-footer li {
+    padding: 1em; }
+  footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+  footer a {
+    box-shadow: inset 0 0 0 0 #5f9ea0;
+    color: #fff;
+    transition: color 0.6s ease-in-out, box-shadow 0.3s ease-in-out;
+    padding: 5px; }
+  footer a:hover {
+    box-shadow: inset 200px 0 0 0 #5f9ea0;
+    padding: 5px;
+    color: #191966; }
+
+.carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  height: 50vh;
+  overflow: hidden;
+  margin-top: 1rem; }
+
+.col-sm-3 iframe {
+  margin: 5em; }
+
+.paragraph-contact {
+  margin: 70px 0 30px; }
+
+.carousel {
+  margin: auto; }
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  border-radius: 6px; }
+  .video-container embed,
+  .video-container iframe,
+  .video-container object {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+.cantidad-carrito {
+  width: 50px; }
+
+.parallax-index-top {
+  background-image: url("../images/parallax-top.jpg");
+  line-height: 2vh;
+  text-align: center;
+  /* Height */
+  height: 50vh;
+  /* Effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .parallax-index-top div {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    width: 70%;
+    margin: auto;
+    font-weight: bold;
+    border-radius: 5px; }
+  .parallax-index-top h1 {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px 0; }
+  .parallax-index-top img {
+    height: max-content;
+    padding: 10px 0; }
+
+.parallax-index-bot {
+  background-image: url("../images/parallax-home-bot.webp");
+  line-height: 2vh;
+  text-align: center;
+  /* Height */
+  height: 50vh;
+  /* Effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh; }

@@ -4,157 +4,328 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Mundo canino</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta
+            name="description"
+            content="Raciones disponibles para tu perro en distintas presentaciones">
+        <meta
+            name="keywords"
+            content="hills, dog chow, pedigree, raciones, perros, alimento premium, equilibrio, golden choice">
+        <title>Raciones para perro</title>
         <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="../css/styles.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+            integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/sass-css.css">
     </head>
 
     <body>
-        <div class="wrapper-grid">
-            <div class="nav-grid">
-                <!--nav-->
-                <nav class="nav-grid nav-top">
-                    <ul>
-                        <li>
-                            <a href="../index.html" class="noDeco">
-                                Inicio
-                            </a>
-                        </li>
-                        <li class="nav-desplegable">
-                            <a href="Razas.html">
-                                Razas
-                            </a>
-                            <ul class="nav-submenu">
-                                <!-- empieza SUB-NAV-->
-                                <li>
-                                    <a href="razas_grandes.html">
-                                        Grandes
-                                    </a>
+        <div class="container">
+            <!--NAV-bootstrap-->
+            <div class="row">
+                <div class="col-sm-12">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand " href="../index.html"><img
+                            class="d-inline-block align-text-top"
+                            src="../images/mundo-canino-logo.png"
+                            alt="Logo mundo canino"
+                            width="20">
+                            Mundo Canino</a>
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="raciones.html">Raciones</a>
                                 </li>
-                                <li>
-                                    <a href="razas_medianas.html">
-                                        Medianas
+                                <li class="nav-item dropdown">
+                                    <a
+                                        class="nav-link dropdown-toggle"
+                                        href=""
+                                        id="navbarDropdown"
+                                        role="button"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Razas
                                     </a>
-                                </li>
-                                <li>
-                                    <a href="razas_pequenas.html">
-                                        Pequeñas
-                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li>
+                                            <a class="dropdown-item" href="razas_grandes.html">Grandes</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="razas_medianas.html">Medianas</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="razas_pequenas.html">Pequeñas</a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
-                        </li>
-                        <!-- finaliza SUB-NAV-->
-                        <li>
-                            <a href="raciones.html">
-                                Raciones
-                            </a>
-                        </li>
-                    </ul>
-                    <h1><img src="../images/mundo-canino-logo.png" alt="Logo Mundo Canino">
-                        Mundo Canino</h1>
-                    <ul>
-                        <li>
-                            <a href="inicio_sesion.html">
-                                Iniciar sesion
-                            </a>
-                        </li>
-                        <li>
-                            <a href="registro.html">
-                                Registrarse
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <!-- /nav-->
+                            <ul class="d-flex navbar-nav mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="inicio_sesion.html">Iniciar sesión</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="registro.html">Registrarse</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
             </div>
-            <div class="content-grid raciones">
-                <h2 class="tituloAzul">Raciones</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos ducimus velit
-                    laboriosam error architecto sunt temporibus modi libero. Consequatur possimus
-                    illum ullam suscipit nobis dolore maxime enim officia corrupti corporis.</p>
-                <!-- table -->
-                <table>
-                    <tr>
-                        <td class="tabla-encabezado">Ración</td>
-                        <td class="tabla-encabezado">Presentación</td>
-                        <td class="tabla-encabezado">Precio</td>
-                        <td class="tabla-encabezado">Cantidad</td>
-                        <td class="tabla-encabezado">Agregar al carrito</td>
-                    </tr>
-                    <tr>
-                        <td>Equilibrio</td>
-                        <td>15 kg</td>
-                        <td>$2500</td>
-                        <td class="no-border"><input class="cantidad-carrito" type="number"></td>
-                        <td class="no-border"><img
-                            class="imagen-carrito"
-                            src="../images/add-to-cart.png"
-                            onclick="alert('Se ha agregado al carrito exitosamente')"
-                            alt=""></td>
-                    </tr>
-                    <tr>
-                        <td>Hills premium</td>
-                        <td>18 kg</td>
-                        <td>$5800</td>
-                        <td class="no-border"><input class="cantidad-carrito" type="number"></td>
-                        <td class="no-border"><img
-                            class="imagen-carrito"
-                            src="../images/add-to-cart.png"
-                            onclick="alert('Se ha agregado al carrito exitosamente')"
-                            alt=""></td>
-                    </tr>
-                    <tr>
-                        <td>Equilibrio</td>
-                        <td>15 kg</td>
-                        <td>$2500</td>
-                        <td class="no-border"><input class="cantidad-carrito" type="number"></td>
-                        <td class="no-border"><img
-                            class="imagen-carrito"
-                            src="../images/add-to-cart.png"
-                            onclick="alert('Se ha agregado al carrito exitosamente')"
-                            alt=""></td>
-                    </tr>
-                    <tr>
-                        <td>Dog Chow</td>
-                        <td>12 kg</td>
-                        <td>$3100</td>
-                        <td class="no-border"><input class="cantidad-carrito" type="number"></td>
-                        <td class="no-border"><img
-                            class="imagen-carrito"
-                            src="../images/add-to-cart.png"
-                            onclick="alert('Se ha agregado al carrito exitosamente')"
-                            alt=""></td>
-                    </tr>
-                    <tr>
-                        <td>Golden choice</td>
-                        <td>15 kg</td>
-                        <td>$2300</td>
-                        <td class="no-border"><input class="cantidad-carrito" type="number"></td>
-                        <td class="no-border"><img
-                            class="imagen-carrito"
-                            src="../images/add-to-cart.png"
-                            onclick="alert('Se ha agregado al carrito exitosamente')"
-                            alt=""></td>
-                    </tr>
-                </table>
-                <!-- /table -->
+            <div class="row">
+                <div class="col-sm-12"><hr>
+                    <h1>Raciones</h1>
+                    <p>
+                        Encontrá el listado de raciones disponibles en la lista de abajo. Para comprar
+                        solo haz click en agregar al carrito, una vez tengas todo lo que deseas puedes
+                        proceder a llenar el formulario de cobro y envío.
+                    </p>
+                    <hr>
+                </div>
             </div>
-            <div class="footer-grid">
-                <footer>
-                    <nav class="nav-footer">
+            <div class="row">
+                <div class="col-sm-10 offset-sm-1">
+                    <!-- table -->
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Ración</th>
+                                <th>Peso</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th>Agregar al carrito</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Equilibrio</td>
+                                <td>15 kg</td>
+                                <td>$2500</td>
+                                <td class="no-border"><input class="cantidad-carrito" type="number"></td>
+                                <td class="no-border"><img
+                                    class="imagen-carrito"
+                                    src="../images/add-to-cart.png"
+                                    onclick="alert('Se ha agregado al carrito exitosamente')"
+                                    alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>Hills premium</td>
+                                <td>18 kg</td>
+                                <td>$5800</td>
+                                <td class="no-border"><input class="cantidad-carrito" type="number"></td>
+                                <td class="no-border"><img
+                                    class="imagen-carrito"
+                                    src="../images/add-to-cart.png"
+                                    onclick="alert('Se ha agregado al carrito exitosamente')"
+                                    alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>Equilibrio</td>
+                                <td>15 kg</td>
+                                <td>$2500</td>
+                                <td class="no-border"><input class="cantidad-carrito" type="number"></td>
+                                <td class="no-border"><img
+                                    class="imagen-carrito"
+                                    src="../images/add-to-cart.png"
+                                    onclick="alert('Se ha agregado al carrito exitosamente')"
+                                    alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>Dog Chow</td>
+                                <td>12 kg</td>
+                                <td>$3100</td>
+                                <td class="no-border"><input class="cantidad-carrito" type="number"></td>
+                                <td class="no-border"><img
+                                    class="imagen-carrito"
+                                    src="../images/add-to-cart.png"
+                                    onclick="alert('Se ha agregado al carrito exitosamente')"
+                                    alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>Golden choice</td>
+                                <td>15 kg</td>
+                                <td>$2300</td>
+                                <td class="no-border"><input class="cantidad-carrito" type="number"></td>
+                                <td class="no-border"><img
+                                    class="imagen-carrito"
+                                    src="../images/add-to-cart.png"
+                                    onclick="alert('Se ha agregado al carrito exitosamente')"
+                                    alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>Equilibrio</td>
+                                <td>17 kg</td>
+                                <td>$2600</td>
+                                <td class="no-border"><input class="cantidad-carrito" type="number"></td>
+                                <td class="no-border"><img
+                                    class="imagen-carrito"
+                                    src="../images/add-to-cart.png"
+                                    onclick="alert('Se ha agregado al carrito exitosamente')"
+                                    alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>Hills premium</td>
+                                <td>22 kg</td>
+                                <td>$6300</td>
+                                <td class="no-border"><input class="cantidad-carrito" type="number"></td>
+                                <td class="no-border"><img
+                                    class="imagen-carrito"
+                                    src="../images/add-to-cart.png"
+                                    onclick="alert('Se ha agregado al carrito exitosamente')"
+                                    alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>Equilibrio</td>
+                                <td>10 kg</td>
+                                <td>$2000</td>
+                                <td class="no-border"><input class="cantidad-carrito" type="number"></td>
+                                <td class="no-border"><img
+                                    class="imagen-carrito"
+                                    src="../images/add-to-cart.png"
+                                    onclick="alert('Se ha agregado al carrito exitosamente')"
+                                    alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>Dog Chow</td>
+                                <td>24 kg</td>
+                                <td>$6200</td>
+                                <td class="no-border"><input class="cantidad-carrito" type="number"></td>
+                                <td class="no-border"><img
+                                    class="imagen-carrito"
+                                    src="../images/add-to-cart.png"
+                                    onclick="alert('Se ha agregado al carrito exitosamente')"
+                                    alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>Golden choice</td>
+                                <td>30 kg</td>
+                                <td>$4000</td>
+                                <td class="no-border"><input class="cantidad-carrito" type="number"></td>
+                                <td class="no-border"><img
+                                    class="imagen-carrito"
+                                    src="../images/add-to-cart.png"
+                                    onclick="alert('Se ha agregado al carrito exitosamente')"
+                                    alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>Equilibrio</td>
+                                <td>30 kg</td>
+                                <td>$4500</td>
+                                <td class="no-border"><input class="cantidad-carrito" type="number"></td>
+                                <td class="no-border"><img
+                                    class="imagen-carrito"
+                                    src="../images/add-to-cart.png"
+                                    onclick="alert('Se ha agregado al carrito exitosamente')"
+                                    alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>Hills premium</td>
+                                <td>36 kg</td>
+                                <td>$10200</td>
+                                <td class="no-border"><input class="cantidad-carrito" type="number"></td>
+                                <td class="no-border"><img
+                                    class="imagen-carrito"
+                                    src="../images/add-to-cart.png"
+                                    onclick="alert('Se ha agregado al carrito exitosamente')"
+                                    alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>Equilibrio</td>
+                                <td>60 kg</td>
+                                <td>$22500</td>
+                                <td class="no-border"><input class="cantidad-carrito" type="number"></td>
+                                <td class="no-border"><img
+                                    class="imagen-carrito"
+                                    src="../images/add-to-cart.png"
+                                    onclick="alert('Se ha agregado al carrito exitosamente')"
+                                    alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>Dog Chow</td>
+                                <td>12 kg</td>
+                                <td>$3100</td>
+                                <td class="no-border"><input class="cantidad-carrito" type="number"></td>
+                                <td class="no-border"><img
+                                    class="imagen-carrito"
+                                    src="../images/add-to-cart.png"
+                                    onclick="alert('Se ha agregado al carrito exitosamente')"
+                                    alt=""></td>
+                            </tr>
+                            <tr>
+                                <td>Golden choice</td>
+                                <td>15 kg</td>
+                                <td>$2300</td>
+                                <td class="no-border"><input class="cantidad-carrito" type="number"></td>
+                                <td class="no-border"><img
+                                    class="imagen-carrito"
+                                    src="../images/add-to-cart.png"
+                                    onclick="alert('Se ha agregado al carrito exitosamente')"
+                                    alt=""></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- /table -->
+                </div>
+            </div>
+            <footer class="py-3 my-4">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h3>Razas</h3>
                         <ul>
                             <li>
-                                <a href="contacto.html">
-                                    Contacto
-                                </a>
+                                <a href="razas_grandes.html">Razas grandes</a>
                             </li>
                             <li>
-                                <p>Todos los derechos reservados. 2022</p>
+                                <a href="razas_medianas.html">Razas medianas</a>
+                            </li>
+                            <li>
+                                <a href="razas_pequenas.html">Razas pequeñas</a>
                             </li>
                         </ul>
-                    </nav>
-                </footer>
-            </div>
-        </body>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>Alimento</h3>
+                        <ul>
+                            <li>
+                                <a href="raciones.html">Raciones</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>Cuenta</h3>
+                        <ul>
+                            <li>
+                                <a href="inicio_sesion.html">Iniciar sesión</a>
+                            </li>
+                            <li>
+                                <a href="registro.html">Registrarse</a>
+                            </li>
+                            <li>
+                                <a href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+    </body>
 
-    </html>
+</html>
